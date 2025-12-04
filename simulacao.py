@@ -152,7 +152,6 @@ if __name__ == "__main__":
     fs.hard_link(id_docs, "backup", id_arq)
 
     print("\n>>> conteudo do Diretorio '/docs'")
-    # Aqui vemos que 'hardlink' aponta para 1
     print(fs._read_data(fs.inodes[id_docs]).decode())
 
     print(f"\n>>> Inode {id_arq} de novo")
